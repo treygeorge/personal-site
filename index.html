@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Trey George - Web Developer</title>
+		<link href="reset.css" rel="stylesheet" />
+		<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+		<link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+		<link href="styles.css" rel="stylesheet" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<header>
+			<nav class="nav">
+				<ul>
+					<li><a href="#highlights">Highlights</a></li>
+					<li><a href="#experience">Experience</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="main">
+			<div class="banner"><span class="name orange">Trey George</span><span class="job-title">Web Developer</span></div>
+
+			<h1 id="highlights" class="section-header">At A <span class="orange">Glance.<span></h1>
+			<section class="highlights">
+				<h1 class="highlight">About Me</h1>
+				<div class="detail">This is just some real random stuff about me.</div>
+				<h1 class="highlight">Languages</h1>
+				<div class="detail">JavaScript is my language of choice.  When I'm not hacking on the server side with JavaScript I am typically writing some sweet, sweet Ruby.</div>
+				<h1 class="highlight">Frameworks</h1>
+				<div class="detail">On the client side I am chest deep in AngularJS.  On the server side I am enjoying some Rails and breaking into Express.</div>
+				<h1 class="highlight">Tools</h1>
+				<div class="detail">I lean on Gulp for task running.  Karma for running my Jasmine tests.  Bower for managing packages.  Node for tons of stuff.</div>
+			</section>
+
+			<h1 id="experience" class="section-header"> A <span class="orange">Deeper</span> Look.</h1>
+			<section class="experience">
+				<div class="job">
+					<h2 class="job-name"><a href="http://www.carfax.com/">Carfax »</a> <span class="dates">2013 - Present</span></h2>
+					<div class="description">
+						<span class="dark-orange">Early: </span>
+						<ul><li>Full stack developer on the myCarfax team.</li>
+							<li>Using Groovy/Grails along with AngularJS to write the web app.</li>
+							<li>Also responsible for building and maintaining the API consumed by the myCarfax mobile app.</li>
+						</ul>
+						<span class="dark-orange">Later: </span>
+						<ul><li>Joined a self-organized team focused on improving frontend quality of life and experience.</li>
+							<li>Acted as a local frontend expert for Carfax, pairing in with developers to help with frontend tasks.</li>
+							<li>Responsbile for building and maintaining styleguides.</li>
+							<li>Styleguides built using Express running on Node.</li>
+							<li>SASS was used to write our styles and Jade for templating.</li>
+						 	<li>Authored an AngularJS library to help manage authentication and user session in Carfax AngularJS apps.</li>
+							<li>Developed custom Gradle plugin to allow our Jasmine tests to be run during our build process.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="job">
+					<h2 class="job-name"><a href="http://www.veteransunited.com/">Veterans United »</a> <span class="dates">2012 - 2013</span></h2>
+					<div class="description">
+						<ul><li>Develop and maintain business-critical applications using PHP (Zend Framework) and later C#.</li>
+							<li>Manager of a project to develop a junior developer level training course to bring new hires up to speed. I also authored several of the chapters in the course (including: PHP, Vagrant, Composer, Testing Methodologies).</li>
+							<li>Developed RESTful and WCF services in an effort to build assets for the development department and move to a more service oriented architecture.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="job">
+					<h2 class="job-name"><a href="https://www.exbsolutions.com/">EXB »</a> <span class="dates">2011 - 2012</span></h2>
+					<div class="description">
+						<ul><li>Perform real-time, embedded software testing for safety-critical systems.</li>
+							<li>Design and write test cases using methodologies such as boundary and path analysis.</li>
+							<li>Tests were created to verify code developed from written requirements.</li>
+							<li>Projects include developing tests for the NASA Orion spacecraft.</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<h1 id="contact" class="section-header"><span class="orange">Contact</span> Me.</h1>
+			<section class="contact">
+				<div class="phone">903 603 0729</div>
+				<div class="email">treygeorge@gmail.com</div>
+			</section>
+		</div>
+		<footer>
+			<a href="https://www.github.com/treygeorge"><i class="fa fa-2x fa-github"></i></a>
+			<a href="http://www.twitter.com/treygeorge"><i class="fa fa-2x fa-twitter"></i></a>
+			<a href="http://www.linkedin.com/in/treygeorge1"><i class="fa fa-2x fa-linkedin-square"></i></a>
+		</footer>
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script>
+			$(function() {
+				$('a[href*=#]:not([href=#])').click(function() {
+					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+						var target = $(this.hash);
+						target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+						if (target.length) {
+							$('html,body').animate({
+								scrollTop: target.offset().top
+							}, 1000);
+							return false;
+						}
+					}
+				});
+			});
+		</script>
+	</body>
+</html>

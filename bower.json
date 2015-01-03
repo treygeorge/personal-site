@@ -1,0 +1,19 @@
+{
+  "name": "personal-site",
+  "version": "0.0.0",
+  "authors": [
+    "trey <treygeorge@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "~4.2.0",
+    "jquery": "~2.1.3"
+  }
+}

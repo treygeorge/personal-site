@@ -1,0 +1,188 @@
+body {
+    font-family: 'Oxygen', sans-serif;
+    color: white;
+    letter-spacing: 1px;
+}
+
+header, footer {
+    background-color: #006A55;
+}
+
+footer {
+    padding: 15px;
+    text-align: center;
+}
+
+footer i {
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    font-size: 22px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+.banner {
+    display: none;
+}
+
+.section-header {
+    text-align: center;
+    background-color: #04876D;
+    padding: 30px 15px;
+    font-weight: bold;
+}
+
+.orange {
+    color: #FA7722;
+}
+
+.dark-orange {
+    color: #A64100;
+}
+
+.nav {
+    padding: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.nav li {
+    padding: 10px 0;
+    margin: 0 10px;
+    text-align: center;
+    list-style: none;
+    display: inline;
+}
+
+.main {
+    background-color: #16a085;
+}
+
+.highlights {
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.highlight {
+    font-size: 22px;
+    padding: 25px 5px;
+}
+
+.highlight ~ .detail {
+    opacity:0;
+    height: 0;
+    overflow: hidden;
+    padding: 5px 25px;
+    text-align: left;
+    line-height: 1.5;
+
+    -webkit-transition: all .3s ease .15s;
+    -moz-transition: all .3s ease .15s;
+    -o-transition: .all .3s ease .15s;
+    -ms-transition: all .3s ease .15s;
+    transition: all .3s ease .15s;
+}
+
+.highlight:hover + .detail, .highlight:focus + .detail {
+    opacity: 1;
+    height: 7.5em;
+
+    -webkit-transition: all .3s ease .15s;
+    -moz-transition: all .3s ease .15s;
+    -o-transition: all .3s ease .15s;
+    -ms-transition: all .3s ease .15s;
+    transition: all .3s ease .15s;
+}
+
+.job {
+    padding: 15px;
+}
+
+.job .job-name {
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.dates {
+    float: right;
+    letter-spacing: 0;
+}
+
+.job .description {
+    padding: 10px;
+    line-height: 1.5;
+}
+
+.contact {
+    padding: 15px;
+}
+
+.contact .phone, .contact .email {
+    padding-top: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    .banner {
+        display: block;
+        background: url('images/trey.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: 400px;
+        position: relative;
+    }
+
+    .name {
+        font-size: 40px;
+        position: absolute;
+        bottom: 55px;
+        right: 10px;
+    }
+
+    .job-title {
+        font-size: 40px;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .nav {
+        padding: 20px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .highlight {
+        width: 25%;
+        float: left;
+    }
+
+    .highlight ~ .detail {
+        opacity: 1;
+        height: 7.5em;
+        padding: 20px 25px;
+        text-align: left;
+        line-height: 1.5;
+    }
+
+    .highlight:hover + .detail, .highlight:focus + .detail {
+    }
+
+    .experience, .contact, .highlights {
+        max-width: 1000px;
+        margin: auto;
+    }
+}
