@@ -165,6 +165,10 @@ h3 {
         text-align: center;
     }
 
+    .highlights {
+        text-align: right;
+    }
+
     .highlight {
         width: 25%;
         float: left;
